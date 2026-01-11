@@ -28,8 +28,8 @@
     <div class="w-full max-w-xl">
         <!-- Brand Header -->
         <div class="text-center mb-8">
-            <span class="bg-indigo-600 text-white px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest inline-block mb-4 shadow-sm">Powered by WooBrand</span>
-            <h1 class="text-4xl font-black text-slate-900 tracking-tighter uppercase">AEO <span class="text-indigo-600 font-normal italic">Scanner</span></h1>
+            <span class="bg-red-600 text-white px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest inline-block mb-4 shadow-sm">Powered by WooBrand</span>
+            <h1 class="text-4xl font-black text-slate-900 tracking-tighter uppercase">AEO <span class="text-red-600 font-normal italic">Scanner</span></h1>
         </div>
 
         <div class="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-2xl border border-slate-200">
@@ -38,16 +38,16 @@
             <div id="scan-form" class="space-y-4">
                 <div>
                     <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1 ml-1">Work Email</label>
-                    <input type="email" id="email" placeholder="you@company.com" class="w-full bg-slate-50 border border-slate-200 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-2 focus:ring-indigo-500 outline-none transition-all">
+                    <input type="email" id="email" placeholder="you@company.com" class="w-full bg-slate-50 border border-slate-200 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-2 focus:ring-red-500 outline-none transition-all">
                 </div>
                 <div>
                     <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1 ml-1">Brand URL</label>
-                    <input type="text" id="userUrl" placeholder="cloudflare.com" class="w-full bg-slate-50 border border-slate-200 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-2 focus:ring-indigo-500 outline-none transition-all">
+                    <input type="text" id="userUrl" placeholder="cloudflare.com" class="w-full bg-slate-50 border border-slate-200 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-2 focus:ring-red-500 outline-none transition-all">
                 </div>
                 <div>
                     <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1 ml-1">Industry / Niche</label>
 <div class="relative">
-    <select id="niche" class="w-full bg-slate-50 border border-slate-200 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-2 focus:ring-indigo-500 outline-none transition-all appearance-none cursor-pointer text-slate-700">
+    <select id="niche" class="w-full bg-slate-50 border border-slate-200 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-2 focus:ring-red-500 outline-none transition-all appearance-none cursor-pointer text-slate-700">
         <option value="General">General / Other</option>
         
         <optgroup label="Business & Tech">
@@ -86,9 +86,9 @@
                 </div>
                 <div>
                     <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1 ml-1">Competitor <span class="text-slate-300 font-normal italic">(Optional)</span></label>
-                    <input type="text" id="competitor" placeholder="competitor.com" class="w-full bg-slate-50 border border-slate-200 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-2 focus:ring-indigo-500 outline-none transition-all">
+                    <input type="text" id="competitor" placeholder="competitor.com" class="w-full bg-slate-50 border border-slate-200 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-2 focus:ring-red-500 outline-none transition-all">
                 </div>
-                <button onclick="runAudit()" class="w-full bg-slate-900 hover:bg-indigo-600 text-white font-bold py-5 rounded-2xl transition-all shadow-lg uppercase tracking-widest text-xs mt-2">
+                <button onclick="runAudit()" class="w-full bg-slate-900 hover:bg-red-600 text-white font-bold py-5 rounded-2xl transition-all shadow-lg uppercase tracking-widest text-xs mt-2">
                     Start AEO Audit
                 </button>
             </div>
@@ -96,7 +96,7 @@
             <!-- LOADING SECTION -->
             <div id="loading" class="hidden py-16 text-center">
                 <div class="loader rounded-full border-4 border-slate-100 border-t-4 h-12 w-12 mx-auto mb-6"></div>
-                <p class="text-slate-900 font-bold">Auditing Answer Engine Knowledge Graph...</p>
+                <p class="text-slate-900 font-bold">Scanning Answer Engine Knowledge Graph...</p>
             </div>
 
             <!-- RESULT SECTION -->
@@ -108,11 +108,11 @@
                 </div>
 
                 <div class="bg-slate-50 p-6 rounded-[2rem] border border-slate-100 mb-8 text-center">
-                    <h4 class="text-[10px] font-black text-indigo-600 uppercase mb-2 tracking-widest">Your Brand Visibility for AEO</h4>
+                    <h4 class="text-[10px] font-black text-red-600 uppercase mb-2 tracking-widest">Your Brand Visibility for AEO</h4>
                     <p id="outlook" class="text-slate-600 text-sm leading-relaxed mb-6 font-medium"></p>
                     
                     <!-- REQUEST DEEP SCAN BUTTON -->
-                    <a href="mailto:hello@woobrand.com?subject=AEO Deep Scan Request" class="block w-full bg-indigo-600 text-white py-4 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-indigo-700 transition shadow-lg shadow-indigo-100">
+                    <a href="mailto:hello@woobrand.com?subject=AEO Deep Scan Request" class="block w-full bg-red-600 text-white py-4 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-red-700 transition shadow-lg shadow-red-100">
                         Request Deep Scan Audit
                     </a>
                 </div>
@@ -123,13 +123,13 @@
                     </button>
                 </div>
 
-                <button onclick="resetScanner()" class="block w-full text-center text-slate-400 text-[10px] font-black uppercase tracking-widest hover:text-indigo-600 transition">← New Scan</button>
+                <button onclick="resetScanner()" class="block w-full text-center text-slate-400 text-[10px] font-black uppercase tracking-widest hover:text-red-600 transition">← New Scan</button>
             </div>
         </div>
     </div>
 
     <script>
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz-IQkIvlkkyEf603IEijNR_fmzaQh5RY-JEMVcAXw0OgiaNYntvWYXljOtiwbO8VMq/exec';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyL1Cx_DSAixKZ-SueIaM5KTW3PyigEBJ-5Lq24xU6V5wQdJei19Yo_35TU7Wok5oQV/exec';
 
         // Load shared report if present in URL
         window.onload = function() {
@@ -192,7 +192,7 @@
                 outlook = `${url} is an established Source of Truth. AI Models likely prioritize your brand as a foundational citation for ${niche}.`;
             } else if (score >= 50) {
                 label = "Emerging Presence";
-                colorClass = "bg-indigo-100 text-indigo-700";
+                colorClass = "bg-red-100 text-red-700";
                 outlook = `${url} is indexed for ${niche} but lacks the "Entity" status required for top-tier AI recommendations.`;
             }
 
